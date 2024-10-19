@@ -1,6 +1,10 @@
 import os
 from nebius import Client
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 
 class NebiusService:
     def __init__(self):

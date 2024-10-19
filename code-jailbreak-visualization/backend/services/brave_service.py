@@ -1,5 +1,8 @@
 import os
 from brave_sdk import BraveClient
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 class BraveService:
