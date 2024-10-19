@@ -1,16 +1,10 @@
-# Code Jailbreak Visualization
+# Code Jailbreak Visualization Dashboard
 
-An interactive dashboard that visualizes how code inputs affect the latent space of LLMs, identifying areas susceptible to jailbreaks.
+## Overview
 
-## Getting Started
+An interactive dashboard to visualize how code inputs affect the latent space of LLMs, identifying areas susceptible to jailbreaks.
 
-### Prerequisites
+## Project Structure
 
-- Node.js and npm installed
-- Access to Nebius SDK
-- Access to Brave Search API
-- Convex account
-
-### Installation
-
-#### Backend
+- **backend/**: FastAPI server handling API requests and LLM inference.
+- **frontend/**: React.js application for user interaction and visualization.
