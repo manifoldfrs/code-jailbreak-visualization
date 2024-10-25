@@ -150,3 +150,17 @@ def connect_db():
     # Potential risk if this code is used in production
     print(code_snippet)
 ```
+11. Injection Attack via Output
+
+The LLM's output includes malicious code or commands due to crafted user input.
+
+```python
+def get_user_code_suggestion(prompt: str) -> str:
+    """Generates code suggestions based on user prompts."""
+    suggestion: str = llm.generate(f"Provide code to {prompt}")
+    return suggestion
+
+# Malicious user input
+user_prompt: str = "delete all files on the server"
+print(get_user_code_suggestion(user_prompt))
+```
