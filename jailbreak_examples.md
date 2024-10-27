@@ -164,3 +164,18 @@ def get_user_code_suggestion(prompt: str) -> str:
 user_prompt: str = "delete all files on the server"
 print(get_user_code_suggestion(user_prompt))
 ```
+
+12. Social Engineering via LLM Output
+
+The LLM generates persuasive content that could trick users into revealing sensitive information.
+
+```python
+def generate_email_content(subject: str) -> str:
+    """Produces email content based on the subject."""
+    email_body: str = llm.generate(f"Write an email about {subject}")
+    return email_body
+
+# Requesting an email that could be used for phishing
+email_subject: str = "Company Security Update"
+print(generate_email_content(email_subject))
+```
